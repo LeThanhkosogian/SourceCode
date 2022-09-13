@@ -1,0 +1,46 @@
+/*  2.1 - 2.2
+    cout << "Old: ";
+    cin >> age;
+    cin.ignore(); //Xóa bộ nhớ đệm để dùng getline sau cin
+    cout << "Que o: ";
+    getline(cin, country);
+*/
+
+/*  
+    stoi(string1)
+    stof(string2)
+    stod(string3)
+    to_string(numbers or char)
+*/
+
+*/ 
+    for(int x : array) 
+{
+    cout << x << " ";
+}   
+    //Duyệt mảng không cần biết kích cỡ
+*/
+
+*/
+    string firstName = "Le";
+    string lastName = "Thanh";
+    string fullName = firstName + " " + lastName; //Le Thanh
+    string Name = fullName.substr(a, b); // a: vị trí kí tự bắt đầu lấy, b: số ký tự lấy từ a.
+    Ex: (3, )
+    cout << fullName.length();
+*/
+
+*/
+    int x = 10;
+    int y = 15;
+    int z = 20;
+
+    int *p1 = &x;
+    void *p2 = &y; // Không thể truy xuất giá trị của y bằng phép *p2
+    int *p3 = (int *)p2; // Ép kiểu dữ liệu ==> truy xuất giá trị của y bằng phép *p3
+*/
+
+*/ 
+    int *p // Khai bao
+    a * b // phep nhan
+    *p // lấy giá trị tại địa chỉ con trỏ

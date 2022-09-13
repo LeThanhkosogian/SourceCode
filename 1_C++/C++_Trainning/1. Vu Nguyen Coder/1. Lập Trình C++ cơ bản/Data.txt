@@ -1,0 +1,5 @@
+Anh Vu;29;9.5
+Saori Hara;20;8.5
+Doremon;30;5
+Duong Qua;45;6
+Obama;59;9.5

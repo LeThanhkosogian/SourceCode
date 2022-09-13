@@ -1,0 +1,55 @@
+{
+    "gitlens.advanced.messages": {
+        "suppressGitMissingWarning": true
+    },
+    "editor.suggestSelection": "first",
+    "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
+    "tabnine.experimentalAutoImports": true,
+    "code-runner.runInTerminal": true,
+    "bracketPairColorizer.depreciation-notice": false,
+    "explorer.confirmDelete": false,
+    "workbench.iconTheme": "vscode-icons",
+    "C_Cpp.updateChannel": "Insiders",
+    "gitHistory.alwaysPromptRepositoryPicker": true,
+    "solidity.compileUsingRemoteVersion": "latest",
+    "javascript.updateImportsOnFileMove.enabled": "always",
+    "workbench.colorTheme": "Dracula Soft",
+    "gitlens.defaultDateLocale": null,
+    "gitlens.hovers.currentLine.over": "line",
+    "cSpell.userWords": [
+        ""
+    ],
+    "sync.quietSync": true,
+    "sync.autoUpload": true,
+    "sync.autoDownload": true,
+    "problems.showCurrentInStatus": true,
+    "task.problemMatchers.neverPrompt": true,
+    "window.zoomLevel": -2,
+    "vsicons.dontShowNewVersionMessage": true,
+    "liveServer.settings.donotShowInfoMsg": true,
+    "[css]": {
+        "editor.defaultFormatter": "vscode.css-language-features"
+    },
+    "explorer.confirmDragAndDrop": false,
+    "editor.language.brackets": [
+    
+    ],
+    "editor.bracketPairColorization.enabled": true,
+    "editor.guides.bracketPairs": "active",
+    "editor.guides.bracketPairsHorizontal": "active",
+    "editor.guides.highlightActiveIndentation": false,
+    "workbench.colorCustomizations": {
+        // Bracket colors
+        "editorBracketHighlight.foreground1": "#FFD700",
+        "editorBracketHighlight.foreground2": "#DA70D6",
+        "editorBracketHighlight.foreground3": "#179fff",
+        // Inactive guide colors
+        "editorBracketPairGuide.background1": "#ffd90080",
+        "editorBracketPairGuide.background2": "#CC66CC80",
+        "editorBracketPairGuide.background3": "#87CEFA80",
+        // Active guide colors
+        "editorBracketPairGuide.activeBackground1": "#ffd90080",
+        "editorBracketPairGuide.activeBackground2": "#CC66CC80",
+        "editorBracketPairGuide.activeBackground3": "#87CEFA80",
+    }
+}

@@ -1,0 +1,23 @@
+h1 {
+    font-size: 50px;
+    font-weight: normal;
+    color: rgb(0, 132, 255);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+h2 {
+    font-size: 20px;
+    font-weight: normal;
+}
+
+h2::first-letter {
+    font-size: 30px;
+    font-weight: normal;
+}
+
+.bai1::first-line {
+    font-size: 30px;
+    font-weight: 900;
+}

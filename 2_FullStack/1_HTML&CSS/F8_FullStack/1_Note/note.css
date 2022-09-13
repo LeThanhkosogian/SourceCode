@@ -1,0 +1,459 @@
+:root {
+    --text-color: violet;
+    /* global */
+}
+
+/* 2. Làm quen với HTML */
+html {
+    font-size: 20px;
+}
+h1 {
+    --h1_color: red;
+    /* local */
+    /* color: var(--h1_color); */
+    color: red;
+    font-size: 100px;
+}
+h2 {
+    color: orange;
+    font-size: 50px;
+}
+/* <!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----> */
+
+/* 2. Làm quen với CSS */
+#first-heading {
+    color: blue;
+    font-size: 50px;
+}
+.third-heading {
+    color: green;
+    font-size: 50px;
+}
+ol li {
+    font-size: 30px;
+}
+.box {
+    width: 100%;
+    height: 100px;
+    background-color: red;
+}
+.viewwidth {
+    width: 10vw;
+    height: 10vh;
+    background-color: green;
+}
+.viewheight {
+    width: 20vw;
+    height: 20vh;
+    background-color: purple;
+}
+.linear-function {
+    width: 20vw;
+    height: 20vh;
+    background: linear-gradient(red, blue);
+}
+.rbga-function {
+    width: 20vw;
+    height: 20vh;
+    background-color: rgba(255, 0, 0, 0.3);
+}
+.rbg-function {
+    width: 20vw;
+    height: 20vh;
+    background-color: rgb(0, 0, 0);
+}
+.calc-function {
+    width: calc(20vw/2);
+    height: 20vh;
+    background-color: rgb(236, 58, 188);
+}
+#hover-Pseudo:hover {
+    color: yellow;
+}
+#active-Pseudo:active {
+    color: pink;
+}
+#Pseudo-classes li:last-child {
+    color: rgb(153, 5, 252);
+    font-size: 40px;
+}
+.before-Pseudo::before {
+    content: "::before";
+    /* rất quan trọng để element giả tổn tại */
+    font-size: 15px;
+    display: block;
+    /* thêm để element giả có tính chất giống thẻ div */
+    width: 50px;
+    height: 50px;
+    background-color: rgb(174, 255, 0);
+}
+.before-Pseudo::after {
+    content: "::after";
+    /* rất quan trọng để element giả tổn tại */
+    font-size: 15px;
+    display: block;
+    /* thêm để element giả có tính chất giống thẻ div */
+    width: 50px;
+    height: 50px;
+    background-color: rgb(5, 185, 251);
+}
+#first-letter::first-letter {
+    font-size: 50px;
+    color: yellow;
+}
+#first-line::first-line {
+    font-size: 25px;
+    background-color: green;
+}
+#selection::selection {
+    background-color: violet;
+    color: white;
+}
+/* <!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----> */
+
+/* 4. Đệm, viền và khoảng lề */
+.box {
+    width: 60px;
+    height: 60px;
+    color: white;
+    /* Căn lề */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.box1 {
+    background-color: #333;
+
+    padding-top: 10px;
+    padding-right: 10px;
+    padding-bottom: 10px;
+    padding-left: 10px;
+    /*padding: 10px;*/
+
+    /*padding: 10px 15px; => top,bot: 10px; left,right: 15px */
+    /*padding: 10px 15px 20px; => top: 10px; left,right: 15px; bot: 20px*/
+    /*padding: 10px 15px 20px; => top: 10px; left,right: 15px; bot: 20px*/
+    /*padding: 10px 15px 20px 25px => top, right, left, bot*/
+}
+.box2 {
+    background-color: orange;
+
+    border-top-width: 10px;
+    border-right-width: 10px;
+    border-bottom-width: 10px;
+    border-left-width: 10px;
+    /* border: 10px */
+    border-style: solid;
+    border-color: #333;
+
+    /* border-chiều: 10px solid #333; */
+
+}
+.box3_1 {
+    background-color: black;
+    margin-left: 20px;
+}
+.box3_2 {
+    background-color: pink;
+    margin-top: 20px;
+    /*margin: 10px;*/
+    
+        /*margin: 10px 15px; => top,bot: 10px; left,right: 15px */
+        /*margin: 10px 15px 20px; => top: 10px; left,right: 15px; bot: 20px*/
+        /*margin: 10px 15px 20px; => top: 10px; left,right: 15px; bot: 20px*/
+        /*margin: 10px 15px 20px 25px => top, right, left, bot*/
+}
+.box4 {
+    width: 100px;
+    height: 100px;
+    color: #fff;
+    background-color: aqua;
+    padding: 16px;
+    border: 2px solid #333;
+    box-sizing: border-box;
+}
+/* 5. Thuộc tính tạo nền */
+.image {
+    width: 100%;
+    height: 100vh;
+    /* background-image:
+        url(https://upload.wikimedia.org/wikipedia/commons/b/bf/A_Black_Star.png),
+        url(https://lh3.googleusercontent.com/a-/AFdZucpaeVtpkvwT2fZowjZYPcURAAeRxzEDstYzSxCI0g=s450-p-rw-no);
+    background-size: 100% auto;
+    background-repeat: no-repeat; */
+
+    /* background-image: 
+        linear-gradient(0deg, rgba(255, 255, 255, 0.7), rgba(0, 0, 0, 0.7)), linear-gradient(độ 0-360deg, màut1, màut2);
+        url(https://lh3.googleusercontent.com/a-/AFdZucpaeVtpkvwT2fZowjZYPcURAAeRxzEDstYzSxCI0g=s450-p-rw-no);
+    background-size: 100% auto; */
+
+    background-image: url(https://as1.ftcdn.net/v2/jpg/00/85/81/34/1000_F_85813465_teNueEAbJ6FReI30z5mSwVZJo2VA8fus.jpg);
+    background-size: 200px;
+}
+.covercontain{
+    width: 100%;
+    height: 100vh;
+    background-image: 
+    url(https://lh3.googleusercontent.com/a-/AFdZucpaeVtpkvwT2fZowjZYPcURAAeRxzEDstYzSxCI0g=s450-p-rw-no);
+    /* background-size: contain; */
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.origin {
+    width: 100%;
+    height: 100vh;
+    background-image:
+        url(https://otakugo.net/wp-content/uploads/2022/07/welcome-to-demon-school-iruma-kun-chapter-258-ngay-phat-hanh-spoiler.jpg);
+    background-size: 100% auto;
+    background-repeat: no-repeat;
+    border: 20px dashed #ccc;
+    padding: 20px;
+    box-sizing: border-box;
+    background-origin: border-box; /*Chọn đổ ảnh từ các lớp*/
+}
+.position {
+    width: 100%;
+    height: 100vh;
+    background-image:
+        url(https://otakugo.net/wp-content/uploads/2022/07/welcome-to-demon-school-iruma-kun-chapter-258-ngay-phat-hanh-spoiler.jpg);
+    background-size: 500px;
+    background-repeat: no-repeat;
+    background-position: top 200px right 200px;
+}
+.shorthand {
+    width: 100%;
+    height: 100vh;
+    background:
+        url(https://otakugo.net/wp-content/uploads/2022/07/welcome-to-demon-school-iruma-kun-chapter-258-ngay-phat-hanh-spoiler.jpg) 
+        no-repeat
+        center
+        /contain;
+}
+
+/* 6. Thuộc tính vị trí */
+.pos_relative {
+    position: relative;
+    bottom: 100px;
+}
+.pos_absolute {
+    width: 100%;
+    height: 120px;
+    background-color: #333;
+    position: relative;
+}
+.pos_absolute_child {
+    /* width: 50px;
+    height: 50px; */
+    background-color: rgba(255, 255, 255, 0.5);
+    position: absolute;
+    top: 10px; left: 10px; /* Ưu tiên */
+    bottom: 10px; right: 10px;
+}
+.pos_fixed {
+    width: 100%;
+    height: 42px;
+    background-color: rgb(165, 255, 127);
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+
+/* 7. Một số tricks và tips */
+.align {
+    --height: 100px;
+    background-color: orange;
+    height: var(--height);
+    text-align: center;
+    line-height: var(--height); /* =height: 100px; */
+}
+.display {
+    background-color: rgb(0, 191, 255);
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.error-image {
+    width: 100%;
+    height: 100vh;
+    background-image: url(http://t3.gstatic.com/licensed-image?q=tbn:ANd9GcTedyHnp2DAn_puA-abbve_2jVECWu5ZBnA4ow05E9KRRgtTYhTIqqujoqpC13H-IZc7ke8KKsLkAzyiODuW28), url(350x150.png);
+    background-repeat: no-repeat; 
+    background-size: 100%;
+}
+
+/* 9. Responsive web The Band */
+@media (min-width: 1024px) {
+    .PC-responsive {
+        color: red;
+    }
+}
+
+@media (min-width: 740px) and (max-width: 1023px) {
+    .Tablet-responsive {
+        color: green;
+    }
+} 
+
+@media (max-width: 739px) {
+    .Mobile-responsive {
+        color: blue;
+    }
+}
+
+/* 11. Quy ước đạt tên class BEM */
+
+.btnBEM {
+    display: inline-block;
+    text-decoration: none;
+    background-color: transparent;
+    border: none;
+    outline: none;
+    color: #fff;
+    padding: 12px 48px;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: opacity 0.2s linear;
+    min-width: 100px;
+}
+
+.btnBEM:hover {
+    opacity: 0.8;
+}
+
+.btnBEM + .btnBEM {
+    margin-left: 16px;
+}
+
+.btn--success {
+    background-color: #71be34;
+}
+
+.btn--warn {
+    background-color: #ffb702;
+}
+
+.btn--danger {
+    background-color: #ff623d;
+}
+
+.btn--disabled {
+    opacity: 0.5 !important;
+    cursor: default;
+}
+
+.btn--size-l {
+    padding: 20px 60px;
+}
+
+
+#toast {
+    width: 40%;
+    position: fixed;
+    top: 32px; right: 32px;
+    z-index: 99999;
+}
+
+.toast {
+    min-width: fit-content;
+    display: flex;
+    align-items: center;
+    background-color: #fff;
+    border-radius: 2px;
+    border-left: 4px solid;
+    padding: 8px 0;
+    margin: 12px;
+    box-shadow: 0 5px 8px rgba(0, 0, 0, 0.08);
+    position: relative;
+    transition: all linear .3s;
+}
+
+@keyframes SlideInLeft {
+    from {
+        opacity: 0;
+        transform: translateX(calc(100% + 32px));
+    }
+    to {
+        opacity: 1;
+        transform: translate(0);
+    }
+}
+
+@keyframes fadeOut {
+    from {
+    }
+    to {
+        opacity: 0;
+    }
+}
+
+.toast__icon {
+    font-size: 24px;
+}
+
+.toast__icon,
+.toast__close {
+    padding: 16px;
+}
+
+.toast__body {
+    /* flex-grow: 1; */
+}
+
+.toast__title {
+    margin: 0;
+    font-size: 16px;
+    font-weight: 600;
+    color: #333;
+}
+
+.toast__msg {
+    margin: 4px 0;
+    font-size: 14px;
+    color: #888;
+    line-height: 1.6;
+}
+
+.toast__close {
+    font-size: 20px;
+    color: rgba(0, 0, 0, 0.3);
+    cursor: pointer;
+    position: absolute;
+    float: right;
+    right: 0;
+}
+.toast__close:hover {
+    opacity: 0.8;
+}
+
+.toast--success {
+    border-color: #47d864;
+}
+
+.toast--success .toast__icon {
+    color: #47d864;
+}
+
+.toast--info {
+    border-color: #2f86eb;
+}
+
+.toast--info .toast__icon {
+    color: #2f86eb;
+}
+
+.toast--warning {
+    border-color: #ffc021;
+}
+
+.toast--warning .toast__icon {
+    color: #ffc021;
+}
+
+.toast--error {
+    border-color: #ff623d;
+}
+
+.toast--error .toast__icon {
+    color: #ff623d;
+}
+

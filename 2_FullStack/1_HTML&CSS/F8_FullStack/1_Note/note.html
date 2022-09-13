@@ -1,0 +1,588 @@
+<!DOCTYPE html>
+<html>
+    <!-- 
+    1. h1 -> h6: heading
+    2. p: paragraph
+    3. img: image
+    4. a: anchor
+    5: ul/ol: unordered/ordered list, li: list item
+    6. table:
+        th: 1 cột tiêu đề. thead->tr->th
+        td: 1 cột nội dung. tbody->tr->td
+    7. input: 
+        type: text, checkbox, radio,...
+    8. button: 
+    9. div:  
+    -->
+
+    <!-- Đây là phần mở đầu -->
+    <head><title> Lê Thành </title>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="note.css"> <!-- *External* -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <style>   
+            h2.second-heading{
+                color: red;
+                font-size: 50px;
+            }
+        </style> <!-- *Internal* -->
+    </head>
+    <!-- Đây là phàn thân -->
+    <body>
+        <div><h1>2. Làm quen với HTML</h1>
+                <h2 title="Coder tương lai"> Đây là ảnh của Lê Thành </h2>
+                <p> Lê Thành không nghiện điện tử </p>
+                <img src="https://scontent.fhan15-2.fna.fbcdn.net/v/t39.30808-6/293287700_2879594652350207_8769697702790057882_n.jpg?_nc_cat=111&ccb=1-7&_nc_sid=174925&_nc_ohc=U6isJMVhj48AX9I7nGk&_nc_ht=scontent.fhan15-2.fna&oh=00_AT-EyZapJrfOeY7JTvypmmS_6a0xJwlTueP1jcMmZy2Niw&oe=62F52466" alt="Ảnh hồi bé của LT 30/05/2010"/>
+                <a href="https://www.facebook.com/trungthanh139/">My Facebook</a>
+                <ul>
+                    <li> Bố: Lê Trung Quỳnh</li>
+                    <li> Mẹ: Vũ Thị Tuyết Thanh</li>
+                    <li> Anh cả: Lê Tuấn Cảnh</li>
+                    <li> Em út: Lê Trung Thành</li>
+                </ul>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>STT</th>
+                            <th>Tên</th>
+                            <th>NickName</th>
+                            <th>Sinh ngày</th>
+                            <th>Nghề nghiệp</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>                    
+                            <td>1</td>
+                            <td>Lê Trung Quỳnh</td>
+                            <td>Quỳnh Điên</td>
+                            <td>05/09/1971</td>
+                            <td>Ride through every City by OldSchool</td>
+                        </tr>
+                        <tr>
+                            <td>2</td>
+                            <td>Vũ Thị Tuyết Thanh</td>
+                            <td>Thanh Hâm</td>
+                            <td>30/03/1975</td>
+                            <td>Ngân khố Quốc gia - Chuyên gia Kinh tế</td>
+                        </tr>
+                        <tr>
+                            <td>3</td>
+                            <td>Lê Tuấn Cảnh</td>
+                            <td>Cảnh Béo</td>
+                            <td>22/07/1997</td>
+                            <td>Thầy Bói Xem Stream</td>
+                        </tr>
+                        <tr>
+                            <td>4</td>
+                            <td>Lê Trung Thành</td>
+                            <td>Cò Con</td>
+                            <td>21/06/2003</td>
+                            <td>Coder Mõm</td>
+                        </tr>
+                    </tbody>
+                </table>
+                <input type="text">
+                <input type="checkbox">
+                <input name="gender" type="radio"> <!-- chỉ chọn 1 option> -->
+                <input name="gender" type="radio">
+                <input name="gender" type="radio">
+                <button> Đập chết con gián </button>
+                <button> Chạy ngay trước khi nó bay</button>
+        </div>
+<!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!---->
+        <div><h1>3. Làm quen với CSS</h1>
+            <div>
+                <ol>
+                    <li>Internal</li>
+                    <li>ExTernal</li>
+                    <li>Inline</li>
+                </ol>
+
+                <h2 id="first-heading"><a href="https://fullstack.edu.vn/learning/html-css?id=98aa429f-66db-42b4-a0c4-5614593e9888">CSS selector ? External</a></h1>
+                <h2 class="second-heading">CSS selector Internal</h1>
+                <h2 style="color: blue; font-size: 50px">CSS selector Inline</h1> <!-- *Inline* -->
+                <h2 class="third-heading">ID & Class External?</h2>
+            </div>
+
+            <div><h2>Priority - Độ ưu tiên</h2>
+                    <ol>
+                        <li>Internal ~ External: gọi sau thì được ưu tiên</li>
+                        <li>Inline - 1000</li>
+                        <li>#id - 100</li>
+                        <li>.class - 10</li>
+                        <li>tag - 1</li>
+                        <li>Equal specificity ~ Bằng điểm: gọi sau thì được ưu tiên</li>
+                        <li>Universal selector and inherited ~ Gọi toàn cục *{}</li>
+                        <li>!important = Vô hạn điểm</li>
+                    </ol>
+            </div>
+
+            <div><h2>Sử dụng biến trong CSS</h2>
+                    <!-- 
+                        :root {
+                            --text-color: violet; /* global */
+                        }
+
+                        h1 {
+                            --h1_color: red; /* local */
+                            color: red;
+                            font-size: 100px;
+                        }
+                    -->
+            </div>
+
+            <div><h2>CSS Units - Các đơn vị trong CSS</h2>
+                    <ol>
+                        <li>Absolute units - Đơn vị tuyệt đối</li>
+                            <ul>
+                                <li>px: không phụ thuộc vào kích thước trình duyệt</li>
+                                <li>pt</li>
+                                <li>cm</li>
+                                <li>mm</li>
+                                <li>inch</li>
+                                <li>pc</li>
+                            </ul>
+                        <li>Relative units - Đơn vị tương đối</li>
+                            <ul style="font-size: 20;">
+                                <li>%: kích thước = thẻ chứa nó * %
+                                    <div class="box"></div>
+                                </li>
+                                <li style="font-size: 1rem">rem: 1 rem = 1 html</li>
+                                <li style="font-size: 2em">em: 1 em = font-size của thẻ gần nhất chứa nó</li>
+                                <li>vw = viewwidth
+                                    <div class="viewwidth"></div>
+                                </li>
+                                <li>vh = viewheight
+                                    <div class="viewheight"></div>
+                                </li>
+                                <li>vmin</li>
+                                <li>vmax</li>
+                                <li>ex</li>
+                                <li>ch</li>
+                            </ul>
+                    </ol>
+            </div>
+
+            <div><h2>CSS Functions - Một số Hàm trong CSS</h2>
+                <ol>
+                    <li>var(): /* color: var(--h1_color); */</li>
+                    <li>background: linear-gradient()
+                        <div class="linear-function"></div>    
+                    </li>
+                    <li>rbga(): background-color:rgba(255,0,0,0.3);
+                        <div class="rbga-function"></div>
+                    </li>
+                    <li>rbg(): background-color:rgb(0,0,0);
+                        <div class="rbg-function"></div>
+                    </li>
+                    <li>calc
+                        <div class="calc-function"></div>
+                    </li>
+                    <li>attr()</li>
+                </ol>
+            </div>
+
+            <div><h2>Pseudo-classes trong CSS - Lớp giả trong CSS</h2>
+                <ol id="Pseudo-classes">
+                    <li>:root</li>
+                    <li>:hover => Có tác dụng khi chạm chuột vào tag
+                        <div id="hover-Pseudo">Test :hover</div>
+                    </li>
+                    <li>:active => Có tác dụng khi bấm chuột vào tag
+                        <div id="active-Pseudo">Test :active</div>
+                    </li>
+                    <li>:first-child & :last-child
+                        <div class="last-child-Pseudo">Test: last-child</div>
+                    </li>
+                </ol>
+            </div>
+
+            <div><h2>CSS Pseudo-elements - Phần tử giả</h2>
+                <ol>
+                    <li>::before & ::after
+                        <div class="before-Pseudo" style="background-color: pink; width: 100%; height: 120px;"></div>
+                    </li>
+                    <li>::first-letter
+                        <div id="first-letter">Test first letter</div>
+                    </li>
+                    <li>::first-line
+                        <div id="first-line">Test first line - Dòng thứ nhất</br>Dòng thứ 2</div>
+                    </li>
+                    <li>::selection
+                        <div id="selection">Test Selection</div>
+                    </li>
+                </ol>
+            </div>
+        </div>
+<!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!---->
+        <div><h1>4. Đệm, viền và khoảng lề</h1>
+            <div><h2>Thuộc tính padding (đệm)</h2>
+                <div class="box box1">Box 1</div>
+            </div>
+            <div><h2>Thuộc tính Border (viền)</h2>
+                <div class="box box2">Box 2</div>
+            </div>
+            <div><h2>Thuộc tính margin (khoảng lề)</h2>
+                <div class="box box3_1">Box 3.1</div>
+                <div class="box box3_2">Box 3.2</div>
+            </div>
+            <div><h2>Thuộc tính box-sizing</h2>
+                <div class="box box4">Box 4</div>
+            </div>
+        </div>
+<!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!---->
+        <div><h1>5. Thuộc tính tạo nền</h1>
+            <div><h2>Thuộc tính background-image</h2>
+                <div class="image"></div>
+            </div>
+            <div><h2>Thuộc tính background-image với <u>cover và contain</u></h2>
+                <div class="covercontain"></div>
+            </div>
+            <div><h2>Thuộc tính background-origin</h2>
+                <div class="origin"></div>
+            </div>
+            <div><h2>Thuộc tính background-position</h2>
+                <div class="position"></div>
+            </div>
+            <div><h2>Thuộc tính shorthand</h2>
+                <div class="shorthand"></div>
+            </div>
+        </div>
+<!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!---->
+        <div><h1>6. Thuộc tính vị trí</h1>
+            <ol style="height: 2000px">
+                <li>Relative
+                    <p class="pos_relative">Test Relative</p>
+                </li>
+                <li>Absolute Phụ thuộc vào thẻ cha có 'position' gần nhất
+                    <p>Test Absolute
+                        <div class="pos_absolute"> LeThanhkosogian
+                            <div class="pos_absolute_child"></div>
+                        </div>
+                    </p>
+                </li>
+                <li>Fixed Phụ thuộc vào header của website
+                    <p>Test Fixed</p>
+                    <div class="pos_fixed"></div>
+                </li>
+                <li>Sticky
+
+                </li>
+            </ol>
+        </div>
+<!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!---->
+        <div><h1>7. Một số tricks và tips <a href="https://fullstack.edu.vn/learning/html-css?id=3fa7ffc5-857d-47f3-a9e0-f36b3fefb84c">Link</a></h1>
+            <div>I. Cách căn giữa trong CSS
+                <ol>
+                    <li class="align">Test text-align và line-height</li><li></li>
+                    <li class="display">Test display</li>
+                </ol>
+            </div>
+            <div>II. Hiển thị ảnh dự phòng </br>
+                <ol>
+                    <li>Ảnh bình thường
+                        <img onerror="this.src='img/350x150.png'" src="https://st3.depositphotos.com/1058411/37681/i/1600/depositphotos_376810762-stock-photo-rear-view-phto-of-little.jpg">
+                    </li>
+                    <li>Ảnh là background-image
+                        <div class="error-image"></div>
+                    </li>
+                </ol>
+            </div>
+        </div>
+<!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!---->
+        <div><h1>8. Xây dụng web The band</h1>
+            <div><b style="font-size: 35px;">Thực hành số 1:</b> </br>
+                <a href="https://www.w3schools.com/w3css/tryw3css_templates_band.htm">https://www.w3schools.com/w3css/tryw3css_templates_band.htm</a>
+                <ol>
+                    <li>Phân tích</li>
+                    <li>Dựng base (xây mảng)</li>
+                    <li>Xây dựng từng phần theo phân tích</li>
+                    <li>Hoàn thiện</li>
+                </ol>
+            </div>
+            <div><b>Một số thành phần thường gặp trên giao diện Website:</b>
+                <ol>
+                    <li>Header</li>
+                    <li>Navigation (Điều hướng)</li>
+                    <li>Breadcrumb</li>
+                    <li>Sidebar</li>
+                    <li>Slider</li>
+                    <li>Banner (Ảnh QC)</li>
+                    <li>Content</li>
+                    <li>Footer</li>
+                </ol>
+            </div>
+            <div>Phân tích dự án The Band
+                <ol>
+                    <li>Header</li>
+                    <li>Slider</li>
+                    <li>Content
+                        <ul>
+                            <li>About</li>
+                            <li>Tour</li>
+                            <li>Contact</li>
+                            <li>Image</li>
+                        </ul>
+                    </li>
+                    <li>Footer</li>
+                </ol>
+            </div>
+        </div>  
+<!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!---->
+        <div><h1>9. Responsive web The Band</h1>
+            <div>MEDIA QUERIES - Chuỗi truy vấn</div>
+            <ol>
+                <li class="PC-responsive">PC: >= 1024px</li>
+                <li class="Tablet-responsive">TABLET: >= 740px & < 1024px</li>
+                <li class="Mobile-responsive">MOBILE: < 740px </li>
+            </ol>
+        </div>
+<!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!---->
+        <div><h1>10. Dựng bố cục web với Flexbox</h1>
+            <ol>
+                <li>Giới thiệu flex box </br><img src="./img/Flexbox.png"></li>
+                <li><a href="https://codepen.io/enxaneta/full/adLPwv/">Thuộc tính CSS trong Flexbox</a></li>
+            </ol>
+            <p>
+                <ul>
+                    <li><b>display: </b>flex | inline-flex</li>
+                    <li><b>flex-flow: </b>flex-direction | flex-wrap
+                        <ul>
+                            <li><b>flex-direction: </b>row | column</li>
+                            <li><b>flex-wrap: </b>nowrap | wrap | wrap-reverse</li>
+                        </ul>
+                    </li>
+                    <li><b>flex: </b>flex-grow | flex-shrink | flex-basis
+                        <ul>
+                            <li><b>flex-grow: </b>number</li>
+                            <li><b>flex-shrink: </b>number</li>
+                            <li><b>flex-basis: </b>number</li>
+                        </ul>
+                    </li>
+                    <li><b>justify-content: </b>flex-start | flex-end | center | space-between | space-around</li>
+                    <li><b>justify-self: </b>flex-start | flex-end | center</li>
+                    <li><b>align-content: </b>flex-start | flex-end | center</li>
+                    <li><b>align-self: </b>flex-start | flex-end | center</li>
+                    <li><b>order: </b>number</li>
+                </ul>
+            </p>
+        </div>
+<!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!---->
+        <div><h1>11. Quy ước đạt tên class BEM</h1>
+            <ol>
+                <li>BEM:
+                    <ul>
+                        <li>Là tiêu chuẩn đặt tên class khi viết CSS</li>
+                    </ul>
+                </li>
+                <li>Ý nghĩa:
+                    <ul>
+                        <li>Viết tắt của: Block Element Modifier</li>
+                        <li>Block: khối</li>
+                        <li>Element: thành phần trong khối</li>
+                        <li>Modifier: bố sung ý nghĩa cho 'Block' và 'Element'</li>
+                    </ul> 
+                </li>
+                <li>Tại sao phải sử sụng BEM:
+                    <ul>
+                        <li>Mỗi người đặt 1 kiểu</li>
+                        <li>Members đặt class trùng nhau, CSS đè lên nhau</li>
+                    </ul>
+                </li>
+                <li>Cú pháp
+                    <ul>
+                        <li>.block</li>
+                        <li>.block__element</li>
+                        <li>.block--modifier</li>
+                        <li>.block__element--modifier</li>
+                    </ul>
+                </li>
+                <li>Tính ứng dụng
+                    <ul>
+                        <li>Xây dựng layout website</li>
+                        <li>Xây dựng thành phần trên website</li>
+                    </ul>
+                </li>
+                <li>Ưu điểm
+                    <ul>
+                        <li>Tính rõ ràng</li>
+                        <li>Tái sử dụng dễ dàng</li>
+                        <li>Giúp cả team làm việc với nhau dễ dàng</li>
+                        <li>Tính module, không lo CSS đè lên nhau</li>
+                    </ul>
+                </li>
+                <li>Nhược điểm
+                    <ul>
+                        <li>Tên class dài</li>
+                        <li>Một số người cho là xấu</li>
+                    </ul>
+                </li>
+                <li>Khi nào dùng BEM thì phù hợp?
+                    <ul>
+                        <li>Dự án nhiều members</li>
+                        <li>Dự án lớn, số lượng pages nhiều hoặc số lượng các thành phần trên giao diện nhiều</li>
+                    </ul>
+                </li>
+                <li>Thực hành
+                    <ul>
+                        <li>Làm button
+                            <ul>
+                                <li>Enabled: Poimter, hover effect </br>
+                                    <div>                                    
+                                        <button class="btnBEM btn--warn btn--size-l">OK</button>
+                                        <button class="btnBEM btn--danger">TRY AGAIN</button>
+                                    </div>
+                                </li>
+                                <li>Disabled: Arrow, no effect
+                                    <div>
+                                        <button class="btnBEM btn--success btn--disabled">GO TO NEXT APPROVAL</button>
+                                    </div>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>Làm Toast Message
+
+                            <!-- Success -->
+                            <div id="toast"></div>
+
+                            <div>
+                                <div onclick="showSuccessToast();" class="btnBEM btn--success">Show Success</div>
+                                <div onclick="showErrorToast();" class="btnBEM btn--danger">Show Success</div>
+                            </div>
+                            
+                            <!-- Info -->
+                            <!-- <div>
+                                <div class="toast toast--info">
+                                    <div class="toast__icon">
+                                        <i class="fa-solid fa-info"></i>
+                                    </div>
+                                    <div class="toast__body">
+                                        <h3 class="toast__title">Info</h3>
+                                        <p class="toast__msg">Đây là bài thực hành về tiêu chuẩn BEM !</p>
+                                    </div>
+                                    <div class="toast__close">
+                                        <i class="fa-solid fa-xmark"></i>
+                                    </div>
+                                </div>
+                            </div> -->
+
+                            <!-- Warning -->
+                            <!-- <div>
+                                <div class="toast toast--warning">
+                                    <div class="toast__icon">
+                                        <i class="fa-solid fa-circle-check"></i>
+                                    </div>
+                                    <div class="toast__body">
+                                        <h3 class="toast__title">Warning</h3>
+                                        <p class="toast__msg">Chương tới là dự án web Shopee !</p>
+                                    </div>
+                                    <div class="toast__close">
+                                        <i class="fa-solid fa-xmark"></i>
+                                    </div>
+                                </div>
+                            </div> -->
+
+                            <!-- Error -->
+                            <!-- <div>
+                                <div class="toast toast--error">
+                                    <div class="toast__icon">
+                                        <i class="fa-solid fa-circle-check"></i>
+                                    </div>
+                                    <div class="toast__body">
+                                        <h3 class="toast__title">Error</h3>
+                                        <p class="toast__msg">Còn 25% nữa để hoàn thành khóa HTML/CSS cần cố gắng tập trung hơn nữa !</p>
+                                    </div>
+                                    <div class="toast__close">
+                                        <i class="fa-solid fa-xmark"></i>
+                                    </div>
+                                </div>
+                            </div> -->
+                            
+                        </li>
+                        <li>Làm 1 thành phần trên website</li>
+                    </ul>
+                </li>
+                <li><a href="https://fullstack.edu.vn/learning/html-css?id=1ab8a177-504b-412e-94d1-4009eae1a366">Đặt tên class khi Block lồng nhau</a>
+                    <ul>
+                        <li>Block con là thành phần dùng chung</li>
+                        <li>Block con chứa nhiều element</li>
+                    </ul>
+                </li>
+            </ol>
+        </div>
+<!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!---->
+        <script>
+
+            // Show Toast Function
+            function toast({
+                title='', message, type = 'info', duration = 3000
+            })
+            
+            {
+                const main = document.getElementById('toast');
+                if(main){
+                    const toast = document.createElement('div');
+
+                    //Auto remove
+                    const autoRemoveId = setTimeout(function() {
+                        main.removeChild(toast);
+                    }, duration + 1000);
+
+                    //Remove by clicked
+                    toast.onclick = function(event){
+                        if (event.target.closest('.toast__close')) {
+                            main.removeChild(toast);
+                            clearTimeout(autoRemoveId);
+                        }
+                    }
+
+                    const icons = {
+                        success: 'fa-solid fa-circle-check',
+                        info: 'fa-solid fa-circle-exclamation',
+                        warning: 'fa-solid fa-triangle-exclamation',
+                        error: 'fa-solid fa-triangle-exclamation',
+                    };
+                    const icon = icons[type];
+                    const delay = (duration / 1000).toFixed(2);
+
+                    toast.classList.add('toast', `toast--${type}`);
+                    toast.style.animation = `SlideInLeft ease 1s, fadeOut linear 1s 3s forwards`;
+                    toast.innerHTML = `
+                        <div class="toast__icon">
+                            <i class="${icon}"></i>
+                        </div>
+                        <div class="toast__body">
+                                <h3 class="toast__title">${title}</h3>
+                            <p class="toast__msg">${message}</p>
+                        </div>
+                        <div class="toast__close">
+                            <i class="fa-solid fa-xmark"></i>
+                        </div>
+                    `;
+                    main.appendChild(toast);
+                    }        
+            }
+
+
+
+            function showSuccessToast() {
+                    toast({
+                    title: 'Success',
+                    message: 'Đã hoàn thành 75% HTML/CSS !',
+                    type: 'success',
+                    duration: 5000,
+                });
+            }
+            function showErrorToast() {
+                toast({
+                    title: 'Error',
+                    message: 'Còn 25% nữa để hoàn thành khóa HTML/CSS cần cố gắng tập trung hơn nữa !',
+                    type: 'error',
+                    duration: 5000,
+                });
+            }
+        </script>
+    </body>
+</html>
+
+ 
