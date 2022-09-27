@@ -1,0 +1,28 @@
+{
+  "name": "3_javascript",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest --coverage"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/LeThanhkosogian/SourceCode.git"
+  },
+  "keywords": [
+    "JavaScript"
+  ],
+  "author": "Le Thanh",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/LeThanhkosogian/SourceCode/issues"
+  },
+  "homepage": "https://github.com/LeThanhkosogian/SourceCode#readme",
+  "devDependencies": {
+    "@babel/core": "^7.19.1",
+    "@babel/preset-env": "^7.19.1",
+    "babel-jest": "^29.0.3",
+    "jest": "^29.0.3"
+  }
+}
