@@ -1,14 +1,113 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<coverage generated="1664358185976" clover="3.2.0">
-  <project timestamp="1664358185977" name="All files">
-    <metrics statements="5" coveredstatements="5" conditionals="6" coveredconditionals="6" methods="1" coveredmethods="1" elements="12" coveredelements="12" complexity="0" loc="5" ncloc="5" packages="1" files="1" classes="1"/>
+<coverage generated="1664513950020" clover="3.2.0">
+  <project timestamp="1664513950021" name="All files">
+    <metrics statements="83" coveredstatements="83" conditionals="96" coveredconditionals="95" methods="14" coveredmethods="14" elements="193" coveredelements="192" complexity="0" loc="83" ncloc="83" packages="1" files="8" classes="8"/>
     <file name="NUMBER-01.js" path="C:\Users\Admin\Desktop\OneDrive\CodeItems\2_FullStack\3_JavaScript\javascript-course-pdfs\11_Pratice\Practice_Solution\1_NUMBER\NUMBER-01.js">
-      <metrics statements="5" coveredstatements="5" conditionals="6" coveredconditionals="6" methods="1" coveredmethods="1"/>
-      <line num="2" count="14" type="cond" truecount="4" falsecount="0"/>
-      <line num="3" count="3" type="stmt"/>
-      <line num="4" count="3" type="stmt"/>
-      <line num="5" count="6" type="cond" truecount="2" falsecount="0"/>
+      <metrics statements="11" coveredstatements="11" conditionals="12" coveredconditionals="12" methods="2" coveredmethods="2"/>
+      <line num="2" count="15" type="cond" truecount="4" falsecount="0"/>
+      <line num="3" count="4" type="stmt"/>
+      <line num="4" count="4" type="stmt"/>
+      <line num="5" count="7" type="cond" truecount="2" falsecount="0"/>
       <line num="7" count="1" type="stmt"/>
+      <line num="11" count="15" type="cond" truecount="4" falsecount="0"/>
+      <line num="12" count="4" type="stmt"/>
+      <line num="13" count="8" type="stmt"/>
+      <line num="14" count="8" type="stmt"/>
+      <line num="15" count="8" type="cond" truecount="2" falsecount="0"/>
+      <line num="17" count="1" type="stmt"/>
+    </file>
+    <file name="NUMBER-02.js" path="C:\Users\Admin\Desktop\OneDrive\CodeItems\2_FullStack\3_JavaScript\javascript-course-pdfs\11_Pratice\Practice_Solution\1_NUMBER\NUMBER-02.js">
+      <metrics statements="11" coveredstatements="11" conditionals="12" coveredconditionals="12" methods="2" coveredmethods="2"/>
+      <line num="2" count="15" type="cond" truecount="4" falsecount="0"/>
+      <line num="3" count="4" type="stmt"/>
+      <line num="4" count="4" type="stmt"/>
+      <line num="5" count="10" type="cond" truecount="2" falsecount="0"/>
+      <line num="7" count="1" type="stmt"/>
+      <line num="11" count="16" type="cond" truecount="4" falsecount="0"/>
+      <line num="12" count="5" type="stmt"/>
+      <line num="13" count="13" type="stmt"/>
+      <line num="14" count="13" type="stmt"/>
+      <line num="15" count="13" type="cond" truecount="2" falsecount="0"/>
+      <line num="17" count="2" type="stmt"/>
+    </file>
+    <file name="NUMBER-03.js" path="C:\Users\Admin\Desktop\OneDrive\CodeItems\2_FullStack\3_JavaScript\javascript-course-pdfs\11_Pratice\Practice_Solution\1_NUMBER\NUMBER-03.js">
+      <metrics statements="11" coveredstatements="11" conditionals="16" coveredconditionals="16" methods="2" coveredmethods="2"/>
+      <line num="2" count="17" type="cond" truecount="6" falsecount="0"/>
+      <line num="3" count="4" type="stmt"/>
+      <line num="4" count="4" type="stmt"/>
+      <line num="5" count="9" type="cond" truecount="2" falsecount="0"/>
+      <line num="7" count="1" type="stmt"/>
+      <line num="11" count="17" type="cond" truecount="6" falsecount="0"/>
+      <line num="12" count="4" type="stmt"/>
+      <line num="13" count="7" type="stmt"/>
+      <line num="14" count="7" type="stmt"/>
+      <line num="15" count="7" type="cond" truecount="2" falsecount="0"/>
+      <line num="17" count="1" type="stmt"/>
+    </file>
+    <file name="NUMBER-04.js" path="C:\Users\Admin\Desktop\OneDrive\CodeItems\2_FullStack\3_JavaScript\javascript-course-pdfs\11_Pratice\Practice_Solution\1_NUMBER\NUMBER-04.js">
+      <metrics statements="13" coveredstatements="13" conditionals="22" coveredconditionals="21" methods="2" coveredmethods="2"/>
+      <line num="2" count="7" type="cond" truecount="4" falsecount="0"/>
+      <line num="3" count="5" type="cond" truecount="2" falsecount="0"/>
+      <line num="4" count="4" type="stmt"/>
+      <line num="5" count="8" type="cond" truecount="2" falsecount="0"/>
+      <line num="7" count="2" type="stmt"/>
+      <line num="11" count="12" type="cond" truecount="4" falsecount="0"/>
+      <line num="12" count="10" type="cond" truecount="2" falsecount="0"/>
+      <line num="13" count="7" type="cond" truecount="4" falsecount="0"/>
+      <line num="14" count="3" type="stmt"/>
+      <line num="15" count="3" type="stmt"/>
+      <line num="16" count="2" type="cond" truecount="3" falsecount="1"/>
+      <line num="17" count="2" type="stmt"/>
+      <line num="19" count="3" type="stmt"/>
+    </file>
+    <file name="NUMBER-05.js" path="C:\Users\Admin\Desktop\OneDrive\CodeItems\2_FullStack\3_JavaScript\javascript-course-pdfs\11_Pratice\Practice_Solution\1_NUMBER\NUMBER-05.js">
+      <metrics statements="2" coveredstatements="2" conditionals="4" coveredconditionals="4" methods="1" coveredmethods="1"/>
+      <line num="2" count="12" type="cond" truecount="4" falsecount="0"/>
+      <line num="3" count="9" type="stmt"/>
+    </file>
+    <file name="NUMBER-06.js" path="C:\Users\Admin\Desktop\OneDrive\CodeItems\2_FullStack\3_JavaScript\javascript-course-pdfs\11_Pratice\Practice_Solution\1_NUMBER\NUMBER-06.js">
+      <metrics statements="8" coveredstatements="8" conditionals="10" coveredconditionals="10" methods="1" coveredmethods="1"/>
+      <line num="2" count="11" type="cond" truecount="4" falsecount="0"/>
+      <line num="3" count="9" type="stmt"/>
+      <line num="4" count="9" type="stmt"/>
+      <line num="5" count="59" type="cond" truecount="2" falsecount="0"/>
+      <line num="6" count="25" type="stmt"/>
+      <line num="7" count="25" type="cond" truecount="4" falsecount="0"/>
+      <line num="8" count="14" type="stmt"/>
+      <line num="12" count="9" type="stmt"/>
+    </file>
+    <file name="NUMBER-07.js" path="C:\Users\Admin\Desktop\OneDrive\CodeItems\2_FullStack\3_JavaScript\javascript-course-pdfs\11_Pratice\Practice_Solution\1_NUMBER\NUMBER-07.js">
+      <metrics statements="14" coveredstatements="14" conditionals="12" coveredconditionals="12" methods="2" coveredmethods="2"/>
+      <line num="2" count="19" type="cond" truecount="4" falsecount="0"/>
+      <line num="3" count="17" type="cond" truecount="2" falsecount="0"/>
+      <line num="4" count="9" type="stmt"/>
+      <line num="5" count="9" type="stmt"/>
+      <line num="6" count="9" type="stmt"/>
+      <line num="7" count="9" type="stmt"/>
+      <line num="11" count="19" type="cond" truecount="4" falsecount="0"/>
+      <line num="12" count="17" type="cond" truecount="2" falsecount="0"/>
+      <line num="13" count="9" type="stmt"/>
+      <line num="14" count="9" type="stmt"/>
+      <line num="15" count="9" type="stmt"/>
+      <line num="16" count="30" type="stmt"/>
+      <line num="17" count="30" type="stmt"/>
+      <line num="19" count="9" type="stmt"/>
+    </file>
+    <file name="NUMBER-08.js" path="C:\Users\Admin\Desktop\OneDrive\CodeItems\2_FullStack\3_JavaScript\javascript-course-pdfs\11_Pratice\Practice_Solution\1_NUMBER\NUMBER-08.js">
+      <metrics statements="13" coveredstatements="13" conditionals="8" coveredconditionals="8" methods="2" coveredmethods="2"/>
+      <line num="2" count="7" type="cond" truecount="4" falsecount="0"/>
+      <line num="3" count="5" type="stmt"/>
+      <line num="4" count="5" type="stmt"/>
+      <line num="5" count="17" type="stmt"/>
+      <line num="6" count="17" type="stmt"/>
+      <line num="8" count="5" type="stmt"/>
+      <line num="9" count="5" type="stmt"/>
+      <line num="13" count="7" type="cond" truecount="4" falsecount="0"/>
+      <line num="14" count="5" type="stmt"/>
+      <line num="15" count="5" type="stmt"/>
+      <line num="16" count="5" type="stmt"/>
+      <line num="17" count="17" type="stmt"/>
+      <line num="19" count="5" type="stmt"/>
     </file>
   </project>
 </coverage>
